@@ -1,7 +1,9 @@
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import { BookButton, CallButton, QualifyButton } from "@/components/CTAButtons";
 import { ClockIcon, PhoneIcon, PinIcon } from "@/components/Icons";
 import {
+  IMAGES,
   ADDRESS_LINES,
   HOURS,
   MAPS_EMBED_URL,
@@ -22,16 +24,28 @@ export default function FinalCta() {
               <path d="M-20 400 C 300 260, 620 420, 900 250 S 1150 60, 1230 20" />
               <path d="M-20 430 C 360 330, 660 450, 960 320 S 1180 170, 1230 130" />
             </svg>
-            <p className="eyebrow eyebrow-light">Begin your healing journey</p>
-            <h2>You don&apos;t have to keep waiting to feel better</h2>
-            <p className="lead lead-light">
-              Start with a free consultation. We&apos;ll listen, answer your questions, and help
-              you understand whether TMS or Spravato® is right for you.
-            </p>
-            <div className="final-actions">
-              <BookButton variant="gold" />
-              <QualifyButton variant="outline-light" />
-              <CallButton variant="outline-light" />
+            <div className="final-copy">
+              <p className="eyebrow eyebrow-light">Begin your healing journey</p>
+              <h2>You don&apos;t have to keep waiting to feel better</h2>
+              <p className="lead lead-light">
+                Start with a free consultation. We&apos;ll listen, answer your questions, and help
+                you understand whether TMS or Spravato® is right for you.
+              </p>
+              <div className="final-actions">
+                <BookButton variant="gold" />
+                <QualifyButton variant="outline-light" />
+                <CallButton variant="outline-light" />
+              </div>
+            </div>
+            <div className="final-media">
+              <Image
+                src={IMAGES.lounge}
+                alt="The Transcend Functional Health lounge with soft armchairs, greenery, and the clinic sign on the wall"
+                fill
+                quality={90}
+                sizes="(max-width: 1023px) 100vw, 900px"
+                className="final-img"
+              />
             </div>
           </div>
         </Reveal>

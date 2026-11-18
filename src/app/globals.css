@@ -3377,3 +3377,57 @@ a.contact-item:hover {
     display: none;
   }
 }
+
+/* ---------- Final call to action: copy beside the lounge photo ---------- */
+.final-card {
+  display: grid;
+  padding: 0;
+}
+
+.final-copy {
+  padding: clamp(2.25rem, 1.5rem + 3.5vw, 4.5rem) clamp(1.5rem, 1rem + 3vw, 4rem);
+}
+
+.final-media {
+  position: relative;
+  order: -1;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.final-img {
+  object-fit: cover;
+  object-position: 72% center;
+  transition: transform 1.4s var(--ease);
+}
+
+.final-card:hover .final-img {
+  transform: scale(1.04);
+}
+
+@media (min-width: 1024px) {
+  .final-card {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    align-items: stretch;
+    text-align: left;
+  }
+
+  .final-copy {
+    align-self: center;
+  }
+
+  .final-card h2,
+  .final-card .lead {
+    margin-inline: 0;
+  }
+
+  .final-actions {
+    justify-content: flex-start;
+  }
+
+  .final-media {
+    order: 0;
+    aspect-ratio: auto;
+    min-height: 460px;
+  }
+}

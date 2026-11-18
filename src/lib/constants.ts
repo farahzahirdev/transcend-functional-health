@@ -1,5 +1,6 @@
 import consultImg from "../../public/images/consult.webp";
 import heroImg from "../../public/images/hero.webp";
+import loungeImg from "../../public/images/lounge.webp";
 import receptionImg from "../../public/images/reception.webp";
 import reliefImg from "../../public/images/relief.webp";
 import spravatoImg from "../../public/images/spravato.webp";
@@ -25,6 +26,7 @@ export const IMAGES = {
   consult: consultImg,
   reception: receptionImg,
   relief: reliefImg,
+  lounge: loungeImg,
 } as const;
 
 export const BOOKING_SECTION_ID = "book";
