@@ -113,6 +113,8 @@ export default function Header() {
         </div>
       </div>
 
+      {menuOpen ? <div className="mobile-nav-backdrop" onClick={close} aria-hidden /> : null}
+
       <div id="mobile-nav" className="mobile-nav" hidden={!menuOpen}>
         <nav className="wrap mobile-nav-inner" aria-label="Mobile">
           {NAV.map((item) => (

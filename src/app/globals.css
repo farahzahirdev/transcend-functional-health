@@ -3348,3 +3348,32 @@ a.contact-item:hover {
     box-shadow: 0 0 0 12px rgba(227, 196, 143, 0);
   }
 }
+
+/* Dimmed, blurred page behind the open mobile menu. Tapping it closes the menu. */
+.mobile-nav-backdrop {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 100dvh;
+  background: rgba(18, 24, 48, 0.24);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation: backdrop-in 0.35s ease both;
+}
+
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.site-header.is-open {
+  box-shadow: 0 30px 60px -20px rgba(18, 24, 48, 0.45);
+}
+
+@media (min-width: 1024px) {
+  .mobile-nav-backdrop {
+    display: none;
+  }
+}
