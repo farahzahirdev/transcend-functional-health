@@ -1,10 +1,10 @@
 import consultImg from "../../public/images/consult.webp";
-import heroImg from "../../public/images/hero.webp";
+import heroImg from "../../public/images/hero-tms.webp";
 import loungeImg from "../../public/images/lounge.webp";
 import receptionImg from "../../public/images/reception.webp";
 import reliefImg from "../../public/images/relief.webp";
 import spravatoImg from "../../public/images/spravato.webp";
-import tmsImg from "../../public/images/tms.webp";
+import tmsImg from "../../public/images/tms-deep-banner.webp";
 
 export const SITE_NAME = "Transcend Functional Health";
 export const SITE_SHORT = "Transcend";
@@ -46,12 +46,9 @@ export const CALENDAR_ID = "6tqKw8A82p4bEUt0iEfo";
 /** Prefixed with a letter: form_embed.js builds a CSS selector from this id, and ids that start with a digit throw. */
 export const CALENDAR_IFRAME_ID = "cal_6tqKw8A82p4bEUt0iEfo_1794938943100";
 
-/**
- * TODO before launch: replace with the Twilio tracking number.
- * The brief did not include it, so the clinic's main line is used for now.
- */
-export const PHONE_NUMBER = "(720) 719-6887";
-export const PHONE_HREF = "tel:+17207196887";
+/** Twilio tracking number for this landing page (not the clinic's main line). */
+export const PHONE_NUMBER = "(719) 793-9694";
+export const PHONE_HREF = "tel:+17197939694";
 
 export const ADDRESS_LINES = [
   "7400 E Orchard Rd, Suite 3030N",
@@ -127,7 +124,7 @@ export const SERVICES = [
     ],
     image: IMAGES.tms,
     imageAlt:
-      "A patient relaxing in a treatment chair while a clinician positions the BrainsWay Deep TMS helmet",
+      "A smiling patient seated comfortably during a session with the BrainsWay Deep TMS helmet resting on her head",
   },
   {
     id: "spravato",
@@ -269,7 +266,7 @@ export const FAQ_ITEMS = [
   {
     question: "What conditions do you treat?",
     answer:
-      "This page focuses on depression that hasn't responded to standard treatment. Transcend Functional Health also supports people living with anxiety, trauma, burnout, and other mood disorders through whole-person psychiatric care. Your consultation is the place to talk through what you're experiencing.",
+      `${PROVIDER} and the care team at Transcend Functional Health specialize in depression that hasn't responded to standard treatment. They also support people living with anxiety, trauma, burnout, and other mood disorders through whole-person psychiatric care. Your consultation is the place to talk through what you're experiencing.`,
   },
   {
     question: "Will insurance cover treatment?",
@@ -279,6 +276,6 @@ export const FAQ_ITEMS = [
   {
     question: "How do I get started?",
     answer:
-      "Book a free consultation using the calendar on this page, complete the short qualification form, or call us. We'll talk through your history, answer your questions, and map out next steps with no obligation.",
+      "Book a free consultation with our care team online, complete the short qualification form, or call our office. We'll talk through your history, answer your questions, and map out next steps with no obligation.",
   },
 ] as const;

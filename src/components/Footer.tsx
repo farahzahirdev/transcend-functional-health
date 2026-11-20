@@ -53,7 +53,7 @@ export default function Footer() {
           <div>
             <p className="footer-label">In a crisis?</p>
             <p className="footer-text">
-              This page is not monitored for emergencies. If you are in crisis or thinking about
+              Our practice does not provide emergency services. If you are in crisis or thinking about
               harming yourself, call or text <a href="tel:988">988</a>, or dial{" "}
               <a href="tel:911">911</a>.
             </p>
@@ -64,8 +64,7 @@ export default function Footer() {
           Individual results vary. TMS and Spravato® are not appropriate for everyone, and
           eligibility is determined by a clinician after an evaluation. Spravato® is available only
           through a restricted program and must be administered in a certified healthcare setting.
-          Insurance coverage depends on your plan and is not guaranteed. Imagery on this page is
-          illustrative.
+          Insurance coverage depends on your plan and is not guaranteed. Imagery is illustrative.
         </p>
 
         <div className="footer-bottom">

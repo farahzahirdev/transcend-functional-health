@@ -978,7 +978,7 @@ ol {
 
 .hero-img {
   object-fit: cover;
-  object-position: 57% center;
+  object-position: 80% center;
   animation: hero-zoom 14s var(--ease) both;
 }
 
@@ -2928,18 +2928,14 @@ a.contact-item:hover {
   }
 }
 
-/* Treatment photos are portrait: give them a taller frame so the subject stays in view */
+/* Deep TMS photo is 16:9 (1672x941): match its shape exactly so nothing is cropped */
 #tms .service-media {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1672 / 941;
 }
 
 /* Spravato photo is close to square: match its shape so neither person is cropped */
 #spravato .service-media {
   aspect-ratio: 6 / 5;
-}
-
-#tms .service-img {
-  object-position: center 35%;
 }
 
 /* Keep the quiz card the same height on every step so the page never jumps */

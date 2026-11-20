@@ -72,13 +72,13 @@ export default function Hero() {
           <div className="hero-arch">
             <Image
               src={IMAGES.hero}
-              alt="A clinician positioning the BrainsWay Deep TMS helmet for a smiling patient"
+              alt="A smiling patient seated with the BrainsWay Deep TMS helmet on while a clinician sets up the session behind her"
               fill
               priority
               quality={95}
-              // Landscape photo cropped into a portrait arch: it is sized by height,
-              // so it needs far more pixels than the arch is wide.
-              sizes="(max-width: 1023px) 260vw, 1500px"
+              // Near-square photo cropped into a 4:5 arch: it is sized by height,
+              // so it renders ~1.2x wider than the arch.
+              sizes="(max-width: 1023px) 120vw, 660px"
               className="hero-img"
             />
           </div>
