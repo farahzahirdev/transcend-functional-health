@@ -36,6 +36,7 @@ export const SERVICES_SECTION_ID = "treatments";
 export const WHY_SECTION_ID = "why-transcend";
 export const FAQ_SECTION_ID = "faq";
 export const VISIT_SECTION_ID = "visit";
+export const INSURANCE_SECTION_ID = "insurance";
 
 export const FORM_ID = "6xF0Rl0LwgGzj8hI83kO";
 export const FORM_IFRAME_ID = "inline-6xF0Rl0LwgGzj8hI83kO";
@@ -246,6 +247,41 @@ export const TRUST_ITEMS = [
     icon: "card",
   },
 ] as const;
+
+type InsurancePlan = {
+  name: string;
+  /** Optional small line under the logo. */
+  note?: string;
+  /**
+   * Path to the logo in public/images/insurance (SVG or transparent PNG).
+   * While this is null the card shows the plan name as text instead.
+   */
+  logo: string | null;
+  /** Set when the logo is a symbol only, so the plan name is shown beside it. */
+  showName?: boolean;
+};
+
+export const INSURANCE_PLANS: readonly InsurancePlan[] = [
+  { name: "Optum", logo: "/images/insurance/optum.svg" },
+  { name: "UnitedHealthcare", logo: "/images/insurance/unitedhealthcare.svg" },
+  { name: "Medicare", logo: "/images/insurance/medicare.png" },
+  {
+    name: "Health First Colorado (Colorado Medicaid)",
+    note: "Spravato® only",
+    logo: "/images/insurance/health-first-colorado.png",
+  },
+  {
+    name: "Mountain Health Network",
+    logo: "/images/insurance/mountain-health-network.png",
+    showName: true,
+  },
+  { name: "Cigna", note: "Evernorth", logo: "/images/insurance/cigna.svg" },
+  { name: "Blue Cross Blue Shield", logo: "/images/insurance/blue-cross-blue-shield.svg" },
+  { name: "Humana", logo: "/images/insurance/humana.svg" },
+  { name: "TRICARE", logo: "/images/insurance/tricare.svg" },
+  { name: "Aetna", logo: "/images/insurance/aetna.svg" },
+  { name: "Curative", logo: "/images/insurance/curative.png" },
+];
 
 export const FAQ_ITEMS = [
   {

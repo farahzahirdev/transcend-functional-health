@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import SelfCheck from "@/components/SelfCheck";
 import Services from "@/components/Services";
+import Insurance from "@/components/Insurance";
 import Journey from "@/components/Journey";
 import WhyTranscend from "@/components/WhyTranscend";
 import BookingCalendar from "@/components/BookingCalendar";
@@ -18,6 +19,7 @@ export default function Home() {
       <Services />
       <Journey />
       <WhyTranscend />
+      <Insurance />
       <BookingCalendar />
       <Faq />
       <InquiryForm />
